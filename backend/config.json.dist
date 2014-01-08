@@ -1,0 +1,22 @@
+{
+    "db": {
+        "host"      : "localhost",
+        "port"      : 3306,
+        "database"  : "opdracht",
+        "user"      : "root",
+        "password"  : "password"
+    },
+    "webserver" : {
+        "port" : 3000
+    },
+    "webfrontend" : {
+        "path" : "../frontend"
+    },
+    "logger" : {
+        "transports" : [
+            {"name": "Console", "options" : {"colorize": true, "timestamp": true} },
+            {"name": "File",    "options" : {"filename": "logdata.log", "json": false, "maxsize" : 4194304, "maxFiles": 2}}
+        ]
+    },
+    "interface": "eth3"
+}
